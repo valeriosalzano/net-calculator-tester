@@ -27,6 +27,8 @@ namespace net_calculator_tester
         //Division
         public static float Divide(float num1, float num2)
         {
+            if (num2 == 0)
+                throw new ArgumentException("Can't divide by zero.");
             return num1 / num2;
         }
     }

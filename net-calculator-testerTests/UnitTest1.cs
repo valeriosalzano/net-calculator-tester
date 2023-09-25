@@ -63,7 +63,7 @@ namespace net_calculator_testerTests
         {
             float num2 = 0f;
 
-            Assert.Throws<System.Exception>(() => { float quotient = Calculator.Divide(num1, num2); },$"Expected division by 0 exception, got a result instead");
+            Assert.Throws<System.ArgumentException>(() => { float quotient = Calculator.Divide(num1, num2); },$"Expected division by 0 exception, got a result instead");
         }
     }
 }
